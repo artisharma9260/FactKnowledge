@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 12%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 16% 94%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 215 16% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 221 83% 95%;
+    --accent-foreground: 221 83% 35%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold leading-tight;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card-base {
+    @apply bg-card rounded-lg border border-border shadow-sm;
+  }
+
+  .badge-corroboration {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold
+           bg-corroboration-light text-corroboration-text border border-corroboration-border;
+  }
+
+  .badge-contradiction {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold
+           bg-contradiction-light text-contradiction-text border border-contradiction-border;
+  }
+
+  .badge-context {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold
+           bg-context-light text-context-text border border-context-border;
+  }
+
+  .source-quote {
+    @apply font-mono text-xs bg-muted border-l-2 border-primary/40 px-3 py-2 rounded-r-md
+           text-muted-foreground leading-relaxed;
+  }
+}
