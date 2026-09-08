@@ -68,7 +68,7 @@ Limitations below.
 
 ## Video Demo
 
-**[Add your demo video link here]**
+https://drive.google.com/file/d/1NJAnMzQ0lTiPJu5werCwI80o4aBV0ucK/view?usp=sharing
 
 ≤3 minutes, showing: a PDF being uploaded and processed, then all four
 required cases (corroboration, contradiction, context-explained,
